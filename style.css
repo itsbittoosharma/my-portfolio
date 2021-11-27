@@ -43,8 +43,8 @@ html{
 }
 
 body{
-    color: var(--first-color);
-    background: var(--body-bg-color);
+    color: rgb(4, 34, 51);
+    background: rgb(165, 176, 187);
     margin: 2rem 0 0 0;
     transition: .5s ease ;
 }
@@ -101,4 +101,43 @@ li{
 
 .nav-items a:hover{
     color: var(--second-color);
+}
+
+.home{
+    position: relative;
+    max-width: 1250;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 2rem;
+    flex-direction: column;
+}
+
+.home .home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home-container .media-items{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.home-container .media-items a{
+    color: var(--second-color);
+    font-size: 1.6em;
+    margin: 5px 0;
+}
+
+.home-container .media-items a:hover{
+    color: var(--hover-color);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
