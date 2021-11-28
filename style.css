@@ -59,7 +59,20 @@ li{
     list-style: none;
 }
 
-.header{
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scroll-thumb-hover-color);
+}
+
+header{
     z-index: 99999;
     width: 100%;
     position: fixed;
@@ -69,9 +82,14 @@ li{
     transition: .6s ease;
 }
 
+header.sticky{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
+}
+
 .nav-bar{
     position: relative;
-    height: calc(4rem+1rem);
+    height: calc(3rem+1rem);
     max-width: 1250px;
     display: flex;
     justify-content: space-between;
@@ -81,6 +99,10 @@ li{
     padding: 0 20px;
     transition: .6 ease;
 
+}
+
+header.sticky.nav-bar{
+    height: calc(2.5rem+1rem);
 }
 
 
