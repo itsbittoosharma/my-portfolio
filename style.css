@@ -45,7 +45,7 @@ html{
 
 body{
     color: rgb(4, 34, 51);
-    background: rgb(169, 186, 187);
+    background: rgb(255, 252, 252);
     margin: 2rem 0 0 0;
     transition: .5s ease ;
 }
@@ -216,6 +216,7 @@ header.sticky.nav-bar{
 }
 
 .home .scroll-down{
+    
     color: var(--first-color);
     padding-left:400px ;
     font-size: var(--normal-font-size);
