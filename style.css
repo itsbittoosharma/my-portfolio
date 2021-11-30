@@ -79,7 +79,7 @@ header{
     position: fixed;
     top: 0px;
     left: 0px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     transition: .6s ease;
 }
 
@@ -103,11 +103,12 @@ header.sticky{
 }
 
 header.sticky.nav-bar{
-    height: calc(2.5rem+1rem);
+    height: calc(2rem+1rem);
 }
 
 
 .nav-bar .logo{
+    font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 15px;
     color: var(--first-color);
     font-size: 1.3em;
@@ -159,7 +160,7 @@ header.sticky.nav-bar{
 
 .home-container .media-items a{
     color: var(--second-color);
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 10px 0;
 }
 
@@ -174,7 +175,7 @@ header.sticky.nav-bar{
 }
 
 .home-container .info h2{
-    font-size: 4em;
+    font-size: 3.8em;
     font-weight: 600;
     line-height: 70px;
 }
@@ -398,6 +399,7 @@ header.sticky.nav-bar{
 
 .edu-list .item .year{
     font-size: var(--small-font-size);
+    font-weight: 400;
 }
 
 .edu-list .item p{
@@ -408,7 +410,7 @@ header.sticky.nav-bar{
 .edu-list .item p span{
     color: var(--first-color);
     font-size: var(--normal-font-size);
-    font-weight: 500;
+    font-weight: 500; */
 }
 
 .bar{
@@ -469,3 +471,4 @@ header.sticky.nav-bar{
 .bar .php:before{
     width: 71%;
 }
+
