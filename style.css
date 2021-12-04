@@ -44,8 +44,8 @@ html{
 }
 
 body{
-    color: rgb(4, 34, 51);
-    background: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    background: rgb(236, 236, 236);
     margin: 2rem 0 0 0;
     transition: .5s ease ;
 }
@@ -97,7 +97,7 @@ header.sticky{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding: 0 15px;
     transition: .6 ease;
 
 }
