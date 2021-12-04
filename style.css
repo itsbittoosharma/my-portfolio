@@ -9,7 +9,7 @@
 
     --body-bg-color: #fefefe;
     --card-bg-color: #fff;
-    --modal-bg-color: #fff;
+    --modal-bg-color: rgb(255, 255, 255);
 
     --bg-transparent-color: rgba(0,0,0,0.1);
     --transparent-color-01: rgba(0,0,0,0.1);
@@ -534,3 +534,59 @@ header.sticky.nav-bar{
 .service-card:hover .learn-more-btn i{
     transform: translateX(10px);
 }
+
+.service-modal{
+    
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    padding: 200px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0px;
+    transition: .3s ease;
+    background-color: var(--bg-transparent-color);
+    backdrop-filter: blur(10px);
+}
+
+.service-modal-body{
+    background: var(--modal-bg-color);
+    position: relative;
+    max-width: 600px;
+    padding: 40px;
+    margin: 20px;
+    border-radius:10px ;
+    box-shadow: var(--box-shadow);
+
+}
+
+.service-modal-body .modal-close-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.service-modal-body h3{
+    font-size: 2em;
+}
+
+.service-modal-body h4{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+
+.service-modal-body ul li{
+    margin-top: 15px;
+
+}
+
+.service-modal-body ul li i{
+    color: var(--second-color);
+   
+}
+
