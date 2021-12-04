@@ -532,5 +532,5 @@ header.sticky.nav-bar{
 }
 
 .service-card:hover .learn-more-btn i{
-    transform: translateX(5px);
+    transform: translateX(10px);
 }
