@@ -14,9 +14,9 @@ var modal = function (modalClick) {
 
 learnmoreBtns.forEach((learnmoreBtns, i) => {
     learnmoreBtns.addEventListener("click", () => {
-        modal[i];
-    })
-})
+        modal(i);
+    });
+});
 
 modalCloseBtns.forEach((modalCloseBtns) => {
     modalCloseBtns.addEventListener("click", () => {

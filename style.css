@@ -544,7 +544,7 @@ header.sticky.nav-bar{
     height: 100vh;
     top: 0;
     left: 0;
-    /* visibility: hidden; */
+    visibility: hidden;
     opacity: 0px;
     transition: .3s ease;
     background-color: var(--bg-transparent-color);
