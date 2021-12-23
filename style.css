@@ -468,9 +468,9 @@ header.sticky.nav-bar{
     width: 0%;
 }
 
-/* .bar .php:before{
-    width: 71%;
-} */
+.bar .python:before{
+    width: 64%;
+}
 
 .services .container .content{
     width: 100%;
