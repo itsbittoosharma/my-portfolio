@@ -581,16 +581,15 @@ header.sticky.nav-bar{
     left: 0;
     visibility: hidden;
     opacity: 0px;
-    /* transition: .5s ease; */
-    /* background-color: var(--bg-transparent-color);
+    transition: .5s ease;
+    background-color: var(--bg-transparent-color);
     backdrop-filter: blur(10px);
-} */
+}
 
 .service-modal.active{
     visibility: visible;
     opacity: 1;
 }
-skills
 
 .service-modal-body{
     background: var(--modal-bg-color);
@@ -601,7 +600,7 @@ skills
     border-radius:10px ;
     box-shadow: var(--box-shadow);
     transform: translateY(-50px);
-    /* transition: .5s ease; */
+    transition: .5s ease;
 
 }
 
@@ -639,4 +638,67 @@ skills
 .service-modal-body ul li i{
     color: var(--second-color);
    
-} 
+}  */
+.project .container .content{
+    width: 100%;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    max-width: 100%;
+    gap: 35px;
+    margin: 0 auto ;
+}
+
+.project-list .project-card{
+    position: relative;
+    max-width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-list .project-card .overlay{
+    transition: 1s ease;
+}
+
+.project-list .project-card:hover .overlay{
+    z-index: 777;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+.project-list .project-card .info{
+    z-index: 777;
+    position:absolute;
+    bottom:0;
+    left: 0;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s ease;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.project-list .project-card:hover .info{
+    transform: translateY(20));
+    opacity: 1;
+}
+
+.project-list .project-card .info h3{
+    font-size: 1.5em;
+}
+
+.project-list .project-card img{
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
