@@ -547,12 +547,12 @@ header.sticky.nav-bar{
     left: 0;
     visibility: hidden;
     opacity: 0px;
-    transition: .3s ease;
+    /* transition: .5s ease; */
     background-color: var(--bg-transparent-color);
     backdrop-filter: blur(10px);
 }
 
-.service-modal .active{
+.service-modal.active{
     visibility: visible;
     opacity: 1;
 }
@@ -566,8 +566,17 @@ header.sticky.nav-bar{
     margin: 20px;
     border-radius:10px ;
     box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    /* transition: .5s ease; */
 
 }
+
+.service-modal.active .service-modal-body{
+
+    transform: translateY(0);
+
+}
+
 
 
 .service-modal-body .modal-close-btn{
