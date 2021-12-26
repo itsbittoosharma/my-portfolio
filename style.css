@@ -345,6 +345,22 @@ header.sticky.nav-bar{
     font-size: var(--small-font-size);
 }
 
+.about .scroll-down{
+    
+    color: var(--first-color);
+    /* padding-left:400px ; */
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    /* padding-top: 90px; */
+    margin-top: 20px;
+}
+
+.about .scroll-down i{
+    color: var(--second-color);
+    font-size: 1.2rem;
+    animation: arrow-down ease 2s infinite ;
+}
+
 .skills .container .content{
     width: 100%;
 }
@@ -383,6 +399,8 @@ header.sticky.nav-bar{
     padding: 5px 15px;
     border-radius: 5px;
 }
+
+
 
 .education-all{
     margin-bottom: 20px;
@@ -473,7 +491,23 @@ header.sticky.nav-bar{
     width: 64%;
 }
 
-.services .container .content{
+.skills .scroll-down{
+    
+    color: var(--first-color);
+    /* padding-left:400px ; */
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    /* padding-top: 90px; */
+    margin-top: 20px;
+}
+
+.skills .scroll-down i{
+    color: var(--second-color);
+    font-size: 1.2rem;
+    animation: arrow-down ease 2s infinite ;
+}
+
+/* .services .container .content{
     width: 100%;
 }
 
@@ -548,15 +582,15 @@ header.sticky.nav-bar{
     visibility: hidden;
     opacity: 0px;
     /* transition: .5s ease; */
-    background-color: var(--bg-transparent-color);
+    /* background-color: var(--bg-transparent-color);
     backdrop-filter: blur(10px);
-}
+} */
 
 .service-modal.active{
     visibility: visible;
     opacity: 1;
 }
-
+skills
 
 .service-modal-body{
     background: var(--modal-bg-color);
@@ -605,5 +639,4 @@ header.sticky.nav-bar{
 .service-modal-body ul li i{
     color: var(--second-color);
    
-}
-
+} 
