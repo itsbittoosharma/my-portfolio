@@ -22,11 +22,11 @@ projectCards.forEach((projectCard, i) => {
 
 projectCloseBtns.forEach((projectCloseBtn) => {
     projectCloseBtn.addEventListener("click", () => {
-        projectModals.forEach((modalView) => {
-            modalView.classList.remove("active");
-        });
-    });
-});
+        projectModals.forEach((projectModalView) => {
+            projectModalView.classList.remove("active")
+        })
+    })
+})
 
 
 
