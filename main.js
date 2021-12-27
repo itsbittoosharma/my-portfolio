@@ -3,28 +3,30 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// const serviceModals = document.querySelectorAll(".service-modal");
-// const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
-// const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+const projectModals = document.querySelectorAll(".project-modal");
+const projectCards = document.querySelectorAll(".project-card");
+const projectCloseBtns = document.querySelectorAll(".project-close-btn");
 
-// var modal = function (modalClick) {
-//     serviceModals[modalClick].classList.add("active")
+var projectModal = function (modalClick) {
+    projectModals[modalClick].classList.add("active");
+    
+}
+    
 
-// }
+projectCards.forEach((projectCard, i) => {
+    projectCard.addEventListener("click", () => {
+        projectModal(i);
+    });
+});
 
-// learnmoreBtns.forEach((learnmoreBtn, i) => {
-//     learnmoreBtn.addEventListener("click", () => {
-//         modal(i); 
-//     })
-// })
 
-// modalCloseBtns.forEach((modalCloseBtn) => {
-//     modalCloseBtn.addEventListener("click", () => {
-//         serviceModals.forEach((modalView) => {
-//             modalView.classList.remove("active")
-//         })
-//      })
-// })
+projectCloseBtns.forEach((projectCloseBtn) => {
+    projectCloseBtn.addEventListener("click", () => {
+        projectModals.forEach((modalView) => {
+            modalView.classList.remove("active");
+        });
+    });
+});
 
 
 

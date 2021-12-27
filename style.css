@@ -595,7 +595,7 @@ header.sticky.nav-bar{
     background: var(--modal-bg-color);
     position: relative;
     max-width: 600px;
-    padding: 40px;
+    padding: 10px;
     margin: 20px;
     border-radius:10px ;
     box-shadow: var(--box-shadow);
@@ -609,8 +609,6 @@ header.sticky.nav-bar{
     transform: translateY(0);
 
 }
-
-
 
 .service-modal-body .modal-close-btn{
     position: absolute;
@@ -715,25 +713,34 @@ header.sticky.nav-bar{
 .project-modal{
     
     z-index: 999999;
+    cursor:initial;
     position: fixed;
     width: 100%;
-    padding: 200px;
+    padding: 50px;
+    padding-left: 320px;
     height: 100vh;
     top: 0;
     left: 0;
-    /* visibility: hidden; */
-    /* opacity: 1; */
-    transition: .5s ease;
+    visibility: hidden;
+    opacity: 0;
+    /* transition: .5s ease; */
     background-color: var(--bg-transparent-color);
     backdrop-filter: blur(10px);
+    /* position: sticky; */
 }
+
+.project-modal.active{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .project-modal-body{
     background: var(--modal-bg-color);
     position: relative;
     max-width: 600px;
     padding: 40px;
-    margin: 20px;
+    margin: 10px;
     border-radius:10px ;
     box-shadow: var(--box-shadow);
     transform: translateY(-50px);
@@ -747,5 +754,15 @@ header.sticky.nav-bar{
     right: 0px;
     margin: 20px;
     cursor: pointer;
+}
+
+.project-modal-body h3{
+    font-size: 1.5 em;
+}
+
+.project-modal-body img{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
