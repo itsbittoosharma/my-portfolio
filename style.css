@@ -740,3 +740,12 @@ header.sticky.nav-bar{
     transition: .5s ease;
 
 }
+
+.project-modal-body .project-close-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+    cursor: pointer;
+}
+
